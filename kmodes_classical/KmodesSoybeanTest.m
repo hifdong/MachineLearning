@@ -1,11 +1,11 @@
 %matlab version:7.13.0.564
-%³ÌĞòËµÃ÷£ºk-modes¾ÛÀàËã·¨²âÊÔ³ÌĞò£¬ÑéÖ¤ÔÚsoybeanÊı¾İ¼¯ÉÏ¾ÛÀà½á¹û
-%ÊäÈë£ºsoybeanÊı¾İ¼¯
-%Êä³ö£ºÆÀ¼ÛÖ¸±êCU£¬Ñù±¾Ë÷Òıcidx,µü´ú´ÎÊıcidx
-%×÷Õß£º¶­ºº·¼
+%ç¨‹åºè¯´æ˜ï¼šk-modesèšç±»ç®—æ³•æµ‹è¯•ç¨‹åºï¼ŒéªŒè¯åœ¨soybeanæ•°æ®é›†ä¸Šèšç±»ç»“æœ
+%è¾“å…¥ï¼šsoybeanæ•°æ®é›†
+%è¾“å‡ºï¼šè¯„ä»·æŒ‡æ ‡CUï¼Œæ ·æœ¬ç´¢å¼•cidx,è¿­ä»£æ¬¡æ•°cidx
+%ä½œè€…ï¼šè‘£æ±‰èŠ³
 clc;
 clear;
-%¶ÁÈ¡soybeanÊı¾İ£¬attribÎªÊı¾İ¼¯ÖĞÊôĞÔ£¬classÎªÑù±¾¶ÔÓ¦Àà±ğ±àºÅ
+%è¯»å–soybeanæ•°æ®ï¼Œattribä¸ºæ•°æ®é›†ä¸­å±æ€§ï¼Œclassä¸ºæ ·æœ¬å¯¹åº”ç±»åˆ«ç¼–å·
 [attrib1,attrib2,attrib3,attrib4,attrib5,attrib6,attrib7,attrib8,attrib9,attrib10,...
     attrib11,attrib12,attrib13,attrib14,attrib15,attrib16,attrib17,attrib18,attrib19,attrib20,attrib21,...
     attrib22,attrib23,attrib24,attrib25,attrib26,attrib27,attrib28,attrib29,attrib30,attrib31,attrib32,...
@@ -16,7 +16,7 @@ soybean_mat=[attrib1';attrib2';attrib3';attrib4';attrib5';attrib6';attrib7';attr
     attrib21';attrib22';attrib23';attrib24';attrib25';attrib26';attrib27';attrib28';attrib29';attrib30';...
     attrib31';attrib32';attrib33';attrib34';attrib35']';
 class_id = class';
- %cidxÎª¾ÛÀàºóÑù±¾¶ÔÓ¦µÄÀà±ğ±àºÅ£¬ctrsÎª¾ÛÀàÖĞĞÄ£¬sumDÎªÄ¿±êº¯ÊıÖµ
+ %cidxä¸ºèšç±»åæ ·æœ¬å¯¹åº”çš„ç±»åˆ«ç¼–å·ï¼Œctrsä¸ºèšç±»ä¸­å¿ƒï¼ŒsumDä¸ºç›®æ ‡å‡½æ•°å€¼
 [cidx, ctrs, sumD] = kmodes_classical(soybean_mat, 4);
 
 indx_c1 = [];indx_c2 = [];indx_c3 = [];indx_c4 = [];
@@ -34,7 +34,7 @@ for i = 1:size(cidx)
     end
 end
 
-   %²éÕÒ³öÏÖ´ÎÊı×î¶àÔªËØ
+   %æŸ¥æ‰¾å‡ºç°æ¬¡æ•°æœ€å¤šå…ƒç´ 
    element_c1 = cidx(indx_c1);
    element_c2 = cidx(indx_c2);
    element_c3 = cidx(indx_c3);
