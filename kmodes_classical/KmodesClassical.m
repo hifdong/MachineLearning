@@ -1,6 +1,6 @@
 function [idx, Center_return, totsumD, iter] = kmodes_classical(X, k)
  %matlab version:7.13.0.564
-%³ÌĞòËµÃ÷£ºk-modes¾ÛÀàËã·¨Ö÷³ÌĞò
+%ç¨‹åºè¯´æ˜ï¼šk-modesèšç±»ç®—æ³•ä¸»ç¨‹åº
 %Input:  'X' - dataset, 'k' -cluster number .
 %Output: 'idx' -class index , 'Center_return' -class center , 
 %        'totsumD' -total distance,'iter' -iteration times .
