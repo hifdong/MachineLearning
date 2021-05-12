@@ -1,6 +1,6 @@
 function D = distfun2(X, Center)
  %matlab version:7.13.0.564
-%³ÌĞòËµÃ÷£º¾àÀë¼ÆËãº¯Êı
+%ç¨‹åºè¯´æ˜ï¼šè·ç¦»è®¡ç®—å‡½æ•°
 %Input: 'X' -dataset ,'Center' -class center .
 %Output:  'D' -distance.
 global V;
@@ -8,7 +8,7 @@ global V;
     D = zeros(n,size(Center,1));
     nclusts = size(Center,1);
 
- %¾àÀë¼ÆËã,DÎª nĞĞkÁĞ
+ %è·ç¦»è®¡ç®—,Dä¸º nè¡Œkåˆ—
  [fra, V] = Fraq(X) ;
  
      for k = 1:n
